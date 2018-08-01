@@ -40,9 +40,9 @@ const appRoutes: Routes = [
 ];
 
 const config = {
-  issuer: 'https://dev-455180.oktapreview.com/oauth2/default',
+  issuer: 'https://dev-{{okta-subdomain}}.oktapreview.com/oauth2/default',
   redirectUri: 'http://localhost:4200/implicit/callback',
-  clientId: '0oafuppcnrAzfZhW80h7'
+  clientId: '{{client_id}}'
 };
 
 @NgModule({
