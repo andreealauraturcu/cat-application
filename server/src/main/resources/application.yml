@@ -1,11 +1,11 @@
 security:
     oauth2:
         client:
-            access-token-uri: https://dev-455180.oktapreview.com/oauth2/default/v1/token
-            user-authorization-uri: https://dev-455180.oktapreview.com/oauth2/default/v1/authorize
-            client-id: 0oafuppcnrAzfZhW80h7
+            access-token-uri: https://dev-{{okta-subdomain}}.oktapreview.com/oauth2/default/v1/token
+            user-authorization-uri: https://dev-{{okta-subdomain}}.oktapreview.com/oauth2/default/v1/authorize
+            client-id: {{client_id}}
             scope: openid profile email
         resource:
-            user-info-uri: https://dev-455180.oktapreview.com/oauth2/default/v1/userinfo
-            token-info-uri: https://dev-455180.oktapreview.com/oauth2/default/v1/introspect
+            user-info-uri: https://dev-{{okta-subdomain}}.oktapreview.com/oauth2/default/v1/userinfo
+            token-info-uri: https://dev-{{okta-subdomain}}.oktapreview.com/oauth2/default/v1/introspect
             prefer-token-info: false
