@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>Cat List</mat-card-header>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item *ngFor="let cat of cats">
+        <img mat-list-avatar src="{{cat.giphyUrl}}" alt="{{cat.name}}">
+        <h3 mat-line>
+          <a mat-button [routerLink]="['/cat-edit', cat.id]">{{cat.name}}</a>
+        </h3>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+
+  <button mat-fab color="primary" [routerLink]="['/cat-add']">Add</button>
+</mat-card>
